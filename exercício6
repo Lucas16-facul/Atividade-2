@@ -1,0 +1,13 @@
+numeros = [2, 7, 10, 13, 18, 21, 24, 31, 40, 45]
+
+pares = 0
+impares = 0
+
+for numero in numeros:
+    if numero % 2 == 0:
+        pares = pares + 1
+    else:
+        impares = impares + 1
+
+print("Quantidade de pares:", pares)
+print("Quantidade de ímpares:", impares)
