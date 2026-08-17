@@ -1,0 +1,8 @@
+numeros = [5, 10, 15, 20, 25, 30, 35, 40]
+
+soma = 0
+
+for numero in numeros:
+    soma = soma + numero
+
+print("Soma:", soma)
