@@ -1,0 +1,18 @@
+numeros = []
+
+for i in range(8):
+    numero = int(input("Digite um número: "))
+    numeros.append(numero)
+
+pesquisa = int(input("Digite o número que deseja pesquisar: "))
+
+encontrado = False
+
+for numero in numeros:
+    if numero == pesquisa:
+        encontrado = True
+
+if encontrado:
+    print("O número está na lista.")
+else:
+    print("O número não está na lista.")
