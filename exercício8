@@ -1,0 +1,13 @@
+nomes = ["Ana", "Bruno", "Carlos", "Daniel", "Eduarda"]
+
+nome = input("Digite um nome: ")
+
+encontrado = False
+
+for i in range(len(nomes)):
+    if nomes[i] == nome:
+        print("O nome está na posição:", i)
+        encontrado = True
+
+if not encontrado:
+    print("Nome não encontrado.")
