@@ -1,0 +1,15 @@
+numeros = [10, 25, 7, 40, 32, 40, 18]
+
+maior = None
+segundo_maior = None
+
+for numero in numeros:
+    if maior is None or numero > maior:
+        segundo_maior = maior
+        maior = numero
+
+    elif numero != maior and (segundo_maior is None or numero > segundo_maior):
+        segundo_maior = numero
+
+print("Maior valor:", maior)
+print("Segundo maior valor distinto:", segundo_maior)
