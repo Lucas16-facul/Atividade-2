@@ -1,0 +1,38 @@
+vendas = [1250, 980, 1430, 2100, 1750, 890, 1620]
+
+# Total vendido
+total = 0
+
+for venda in vendas:
+    total = total + venda
+
+# Média diária
+media = total / len(vendas)
+
+# Maior e menor venda
+maior = vendas[0]
+menor = vendas[0]
+
+for venda in vendas:
+    if venda > maior:
+        maior = venda
+
+    if venda < menor:
+        menor = venda
+
+# Dias acima da média
+dias_acima = 0
+
+for venda in vendas:
+    if venda > media:
+        dias_acima = dias_acima + 1
+
+# Percentual de dias acima da média
+percentual = (dias_acima / len(vendas)) * 100
+
+print("Total vendido:", total)
+print(f"Média diária: R$ {media:.2f}")
+print("Maior venda:", maior)
+print("Menor venda:", menor)
+print("Dias acima da média:", dias_acima)
+print(f"Percentual de dias acima da média: {percentual:.2f}%")
