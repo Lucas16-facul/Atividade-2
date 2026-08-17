@@ -1,0 +1,20 @@
+numeros = []
+
+for i in range(10):
+    numero = float(input("Digite um número: "))
+    numeros.append(numero)
+
+soma = 0
+
+for numero in numeros:
+    soma = soma + numero
+
+media = soma / len(numeros)
+
+print(f"Média: {media:.2f}")
+
+print("Valores acima da média:")
+
+for numero in numeros:
+    if numero > media:
+        print(numero)
