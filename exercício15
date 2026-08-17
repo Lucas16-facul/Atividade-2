@@ -1,0 +1,13 @@
+nomes = ["Ana", "Bruno", "Carlos", "Daniel", "Eduarda"]
+notas = [8.5, 5.0, 7.0, 4.5, 9.0]
+
+for i in range(len(nomes)):
+    if notas[i] >= 6:
+        situacao = "Aprovado"
+    else:
+        situacao = "Reprovado"
+
+    print("Nome:", nomes[i])
+    print("Nota:", notas[i])
+    print("Situação:", situacao)
+    print()
