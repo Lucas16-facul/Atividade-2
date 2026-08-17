@@ -1,0 +1,17 @@
+numeros = []
+
+for i in range(5):
+    numero = int(input("Digite um número: "))
+    numeros.append(numero)
+
+print("Lista antes da remoção:", numeros)
+
+remover = int(input("Digite o número que deseja remover: "))
+
+if remover in numeros:
+    numeros.remove(remover)
+    print("Número removido.")
+else:
+    print("Número não encontrado.")
+
+print("Lista depois da remoção:", numeros)
